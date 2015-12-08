@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TypeScript - Todo App</title>
+  <script src="https://code.angularjs.org/tools/system.js"></script>
+  <script>
+    System.config({
+      packages: {'app': {defaultExtension: 'js'}}
+    });
+    System.import('./app/main');
+  </script>
+</head>
+<body>
+  <form>
+    <input id="todoTitle"/>
+    <button type="submit" id="addTodo">Add</button>
+  </form>
+  <ul id="todosList"></ul>
+</body>
+</html>
