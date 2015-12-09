@@ -1,8 +1,7 @@
-///<reference path="../interfaces/itodo.ts"/>
 import TodoList from './todo_list';
 import TodoItem from './todo_item';
 
-const todos: Array<ITodo> = [new TodoItem('Todo 1'), new TodoItem('Todo 2')];
+const todos: Array<TodoItem> = [new TodoItem('Todo 1'), new TodoItem('Todo 2')];
 
 const inputElement: HTMLInputElement = document.getElementsByTagName('input').item(0);
 const button: HTMLElement = document.getElementById('addTodo');

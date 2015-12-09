@@ -1,6 +1,4 @@
-///<reference path="../interfaces/itodo.ts"/>
-
-class TodoItem implements ITodo {
+class TodoItem {
   title: string;
   checked: boolean;
   constructor(title: string) {
