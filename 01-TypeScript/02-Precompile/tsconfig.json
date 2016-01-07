@@ -3,6 +3,7 @@
     "module": "commonjs",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "target": "ES5"
   }
 }
