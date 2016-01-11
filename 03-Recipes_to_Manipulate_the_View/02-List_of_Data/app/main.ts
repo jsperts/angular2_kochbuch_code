@@ -1,6 +1,5 @@
 import {Component, View} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser';
-//import {bootstrap, Component, View} from 'angular2/angular2';
 
 interface IUser {
   firstname: string,
