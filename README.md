@@ -4,7 +4,7 @@ Hier befindet sich Beispiel-Code für das [Angular 2 Kochbuch](https://leanpub.c
 
 ## Angular Version
 
-Angular 2 befindet sich im Beta-Stadion und wird ständig aktualisiert. Teilweise wird auch die API verändert.
+Angular 2 befindet sich im Beta-Stadium und wird ständig aktualisiert. Teilweise wird auch die API verändert.
 Ich versuche den Code möglichst aktuell zu halten und bitte um Entschuldigung, falls manche Code-Beispiele mit der aktuellsten Version von Angular nicht funktionieren.
 
 ## Lizenz
