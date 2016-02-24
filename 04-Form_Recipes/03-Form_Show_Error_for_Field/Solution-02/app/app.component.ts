@@ -5,7 +5,7 @@ import {Component, View} from 'angular2/core';
 })
 @View({
   template: `
-    <form (ngSubmit)="onSubmit(form)" #form="ngForm" novalidate>
+    <form (ngSubmit)="onSubmit()" #form="ngForm" novalidate>
       <label>Username</label>
       <input type="text" [(ngModel)]="user.username" required ngControl="username" #username="ngForm"/>
       <div *ngIf="!username.valid">
