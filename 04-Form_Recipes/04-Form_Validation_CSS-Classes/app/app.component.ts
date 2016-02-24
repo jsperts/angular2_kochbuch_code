@@ -5,7 +5,7 @@ import {Component, View} from 'angular2/core';
 })
 @View({
   template: `
-    <style>
+      <style>
       .ng-invalid {
         border-color: red;
       }
@@ -14,12 +14,12 @@ import {Component, View} from 'angular2/core';
         border-color: green;
       }
     </style>
-    <form (ngSubmit)="onSubmit()" novalidate>
+    <form (ngSubmit)="onSubmit()" #form="ngForm" novalidate>
       <label>Username</label>
-      <input type="text" [(ngModel)]="user.username" required/>
+      <input type="text" [(ngModel)]="user.username" required ngControl="username"/>
       <label>Password</label>
-      <input type="password"  [(ngModel)]="user.password" required minlength="10"/>
-      <button type="submit">Submit</button>
+      <input type="password" [(ngModel)]="user.password" required minlength="10" ngControl="password"/>
+      <button type="submit" [disabled]="!form.valid">Submit</button>
     </form>
   `
 })
