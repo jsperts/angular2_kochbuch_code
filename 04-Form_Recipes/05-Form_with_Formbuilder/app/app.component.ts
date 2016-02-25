@@ -1,39 +1,31 @@
 import {Component, View} from 'angular2/core';
-import {Control} from 'angular2/common';
-import {Validators} from 'angular2/common';
+import {FormBuilder, ControlGroup} from 'angular2/common';
 
 @Component({
   selector: 'my-app'
 })
 @View({
   template: `
-      <style>
-      .ng-invalid {
-        border-color: red;
-      }
-
-      .ng-valid {
-        border-color: green;
-      }
-    </style>
-    <form (ngSubmit)="onSubmit(form)" #form="ngForm" novalidate>
+    <form (ngSubmit)="onSubmit()" [ngFormModel]="form" novalidate>
       <label>Username</label>
-      <!--input type="text" [(ngModel)]="user.username" [ngFormControl]="username"/-->
-      <input type="text" [ngFormControl]="username"/>
+      <input type="text" ngControl="username"/>
       <label>Password</label>
-      <input type="password" [ngFormControl]="password"/>
+      <input type="password" ngControl="password"/>
       <button type="submit">Submit</button>
     </form>
   `
 })
 class MyApp {
-  username = new Control('', Validators.required);
-  password = new Control('', Validators.required);
-  constructor() {}
+  form: ControlGroup;
+  constructor(builder: FormBuilder) {
+    this.form = builder.group({
+      username: builder.control(''),
+      password: builder.control('')
+    });
+  }
 
-  onSubmit(form) {
-    console.log(form)
-    console.log(this.username)
+  onSubmit() {
+    console.log(this.form.value)
   }
 }
 
