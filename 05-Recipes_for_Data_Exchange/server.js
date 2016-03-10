@@ -45,6 +45,9 @@ function handleRequest(req, resp) {
     } else {
       respondWithError(resp);
     }
+  } else if (req.url === '/error') {
+    resp.writeHead(500, 'Internal Server Error');
+    resp.end(JSON.stringify({error: 'Invalid Url'}));
   } else {
     respondWithError(resp);
   }
