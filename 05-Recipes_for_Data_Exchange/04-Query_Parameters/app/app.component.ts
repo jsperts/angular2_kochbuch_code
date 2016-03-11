@@ -14,7 +14,6 @@ interface IData {
 @View({
   template: `
     <button (click)="getData()">Get Data</button>
-    <button (click)="sendData()">Send Data</button>
     <ul>
       <li *ngFor="#d of data">ID: {{d.id}} Name: {{d.name}}</li>
     </ul>
