@@ -1,11 +1,9 @@
-import {Component, View} from 'angular2/core';
+import {Component} from 'angular2/core';
 import DataService from './data.service';
 
 @Component({
   selector: 'my-app',
-  providers: [DataService]
-})
-@View({
+  providers: [DataService],
   template: '<div>Hello Data!</div>'
 })
 class MyApp {

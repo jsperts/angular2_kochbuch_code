@@ -1,9 +1,7 @@
-import {Component, View} from 'angular2/core';
+import {Component} from 'angular2/core';
 
 @Component({
-  selector: 'my-app'
-})
-@View({
+  selector: 'my-app',
   template: `
     <div>Variante 1 mit (EventName)</div>
     <div (click)="clicked()">Click me</div>
