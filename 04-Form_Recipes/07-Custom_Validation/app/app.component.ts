@@ -1,4 +1,4 @@
-import {Component, View} from 'angular2/core';
+import {Component} from 'angular2/core';
 import {
     FormBuilder,
     ControlGroup,
@@ -7,9 +7,7 @@ import {
 } from 'angular2/common';
 
 @Component({
-  selector: 'my-app'
-})
-@View({
+  selector: 'my-app',
   template: `
     <form (ngSubmit)="onSubmit()" [ngFormModel]="form" novalidate>
       <label>Username</label>
