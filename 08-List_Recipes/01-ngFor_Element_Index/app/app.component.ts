@@ -1,4 +1,4 @@
-import {Component, View} from 'angular2/core';
+import {Component} from 'angular2/core';
 
 interface IUser {
   firstname: string,
@@ -8,9 +8,7 @@ interface IUser {
 const users:Array<IUser> = [{firstname: 'Max', lastname: 'Mustermann'}, {firstname: 'John', lastname: 'Doe'}];
 
 @Component({
-  selector: 'my-app'
-})
-@View({
+  selector: 'my-app',
   template: `
     <div>Variante 1 mit *</div>
     <ul>

@@ -1,4 +1,4 @@
-import {Component, View} from 'angular2/core';
+import {Component} from 'angular2/core';
 import {HTTP_PROVIDERS} from 'angular2/http';
 import DataService from './data.service';
 
@@ -9,9 +9,7 @@ interface IData {
 
 @Component({
   selector: 'my-app',
-  providers: [DataService, HTTP_PROVIDERS]
-})
-@View({
+  providers: [DataService, HTTP_PROVIDERS],
   template: `
     <button (click)="getData()">Get Data</button>
     <ul>
