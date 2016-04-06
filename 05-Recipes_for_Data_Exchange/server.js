@@ -57,6 +57,10 @@ function handleRequest(req, resp) {
   } else if (pathname === '/error') {
     resp.writeHead(500, 'Internal Server Error');
     resp.end(JSON.stringify({error: 'Invalid Url'}));
+  } else if (pathname === '/longrequest') {
+    setTimeout(function() {
+      resp.end(JSON.stringify({data: data}));
+    }, 3000);
   } else {
     respondWithError(resp);
   }
