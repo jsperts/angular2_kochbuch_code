@@ -1,6 +1,16 @@
-# Change log
+# Change Log
 
 ## [Unreleased]
+
+### Added
+
+### Changed
+
+### Removed
+
+### Deprecated
+
+## [v0.1.0] - 2016-04-07
 
 ### Added
 
@@ -8,6 +18,8 @@
 * Neues Rezept: [05-Recipes\_for\_Data\_Exchange/05-Cancel\_Request](./05-Recipes_for_Data_Exchange/05-Cancel_Request)
 * Neues Rezept: [07-Component\_Recipes/03-Separation\_of\_Template\_and\_Styles](./07-Component_Recipes/03-Separation_of_Template_and_Styles)
 * Neues Rezept: [07-Component\_Recipes/04-Separation\_of\_Component\_and\_Styles](./07-Component_Recipes/04-Separation_of_Component_and_Styles)
+* Neues Rezept: [07-Component\_Recipes/05-Pass\_Data\_to\_Child\_with\_Inputs](./07-Component_Recipes/05-Pass_Data_to_Child_with_Inputs)
+* Neues Rezept: [07-Component\_Recipes/06-Pass\_Data\_to\_Parent\_with\_Outputs](./07-Component_Recipes/06-Pass_Data_to_Parent_with_Outputs)
 
 ### Changed
 
