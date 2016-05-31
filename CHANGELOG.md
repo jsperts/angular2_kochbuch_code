@@ -6,7 +6,19 @@
 
 ### Changed
 
+* Rezepte benutzen jetzt angular-cli
+* Angular Version aktualisiert (rc.1)
+* Fix .gitignore Dateien für angular-cli
+* Neue Syntax für ngFor in 03-Recipes\_to\_Manipulate\_the\_View/02-List\_of\_Data
+* Neue Syntax für ngFor in 08-List\_Recipes/\*
+* Neues ngFor-Konstrukt für das erste Element in 08-List\_Recipes/03-First\_Last\_ngFor\_Element
+* 03-Recipes\_to\_Manipulate\_the\_View/04-Dynamic\_Classes nutzt jetzt die styles-Eigenschaft statt style Tags im Template
+* 08-List\_Recipes/02-Odd\_Even\_ngFor\_Elements/ nutzt jetzt die styles-Eigenschaft statt style Tags im Template
+* 08-List\_Recipes/03-First\_Last\_ngFor\_Element nutzt jetzt die styles-Eigenschaft statt style Tags im Template
+
 ### Removed
+
+* 02-Basic\_Recipes/03-Precompile\_Angular\_App
 
 ### Deprecated
 
