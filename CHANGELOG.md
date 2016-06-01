@@ -4,6 +4,9 @@
 
 ### Added
 
+* Zweite Lösung in 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Template
+* Zweite Lösung in 07-Component\_Recipes/03-Separation\_of\_Component\_and\_Styles
+
 ### Changed
 
 * Rezepte benutzen jetzt angular-cli
@@ -19,6 +22,7 @@
 ### Removed
 
 * 02-Basic\_Recipes/03-Precompile\_Angular\_App
+* 07-Component\_Recipes/01-Component\_without\_View
 
 ### Deprecated
 
