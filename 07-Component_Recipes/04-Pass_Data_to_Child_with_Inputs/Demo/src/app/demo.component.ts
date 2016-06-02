@@ -16,14 +16,14 @@ import { SecondComponent } from './second.component';
 })
 export class DemoAppComponent {
   parentPrimitive: string = 'Hello World!';
-  parentObject = {name: 'Max'};
+  parentObject = { name: 'Max' };
 
   changePrimitive() {
     this.parentPrimitive = 'New Primitive Data Parent';
   }
 
   changeObjectRef() {
-    this.parentObject = {name: 'New Parent Ref Name'};
+    this.parentObject = { name: 'New Parent Ref Name' };
   }
 
   changeObjectProp() {

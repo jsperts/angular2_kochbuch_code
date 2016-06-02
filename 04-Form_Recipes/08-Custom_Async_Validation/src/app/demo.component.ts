@@ -37,13 +37,14 @@ export class DemoAppComponent {
               }, 1000);
             });
           }),
-      password: builder.control('', Validators.compose([Validators.required, Validators.minLength(10)]))
+      password: builder.control('',
+          Validators.compose([Validators.required, Validators.minLength(10)]))
     });
   }
 
   onSubmit() {
     if (!this.form.pending && this.form.valid) {
-      console.log(this.form.value)
+      console.log(this.form.value);
     }
   }
 }

@@ -24,7 +24,7 @@ export class DemoAppComponent {
   data: Array<IData>;
   subscription: Subscription;
 
-  constructor(dataService:DataService) {
+  constructor(dataService: DataService) {
     this.dataService = dataService;
     this.data = [];
   }

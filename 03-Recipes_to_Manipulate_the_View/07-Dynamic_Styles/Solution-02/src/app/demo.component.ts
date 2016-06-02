@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 interface IDimensions {
   width: string;
-  height: string
+  height: string;
 }
 
 @Component({

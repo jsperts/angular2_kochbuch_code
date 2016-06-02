@@ -25,7 +25,7 @@ export class DemoAppComponent {
   data: Array<IData>;
   errorText: string;
 
-  constructor(dataService:DataService) {
+  constructor(dataService: DataService) {
     this.dataService = dataService;
   }
 

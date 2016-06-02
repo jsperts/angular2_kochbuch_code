@@ -11,7 +11,8 @@ import { Component } from '@angular/core';
       <label>Username</label>
       <input type="text" [(ngModel)]="user.username" required ngControl="username"/>
       <label>Password</label>
-      <input type="password" [(ngModel)]="user.password" required minlength="10" ngControl="password"/>
+      <input type="password" [(ngModel)]="user.password"
+          required minlength="10" ngControl="password"/>
       <button type="submit" [disabled]="!form.valid">Submit</button>
     </form>`
 })

@@ -5,12 +5,14 @@ import { Component } from '@angular/core';
   template: `
     <form (ngSubmit)="onSubmit()" #form="ngForm" novalidate>
       <label>Username</label>
-      <input type="text" [(ngModel)]="user.username" required ngControl="username" #username="ngForm"/>
+      <input type="text" [(ngModel)]="user.username"
+          required ngControl="username" #username="ngForm"/>
       <div *ngIf="!username.valid">
         This field is required!
       </div>
       <label>Password</label>
-      <input type="password" [(ngModel)]="user.password" required minlength="10" ngControl="password" #password="ngForm"/>
+      <input type="password" [(ngModel)]="user.password"
+          required minlength="10" ngControl="password" #password="ngForm"/>
       <div *ngIf="password?.errors?.required">
         This field is required!
       </div>

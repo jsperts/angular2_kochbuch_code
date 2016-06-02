@@ -10,7 +10,8 @@ import { Component } from '@angular/core';
         This field is required!
       </div>
       <label>Password</label>
-      <input type="password" [(ngModel)]="user.password" required minlength="10" ngControl="password"/>
+      <input type="password" [(ngModel)]="user.password"
+          required minlength="10" ngControl="password"/>
       <div *ngIf="form.controls.password?.errors?.required">
         This field is required!
       </div>

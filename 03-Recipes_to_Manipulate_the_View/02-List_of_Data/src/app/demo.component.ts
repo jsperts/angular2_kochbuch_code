@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 
 interface IUser {
-  firstname: string,
-  lastname: string
+  firstname: string;
+  lastname: string;
 }
 
-const users:Array<IUser> = [{firstname: 'Max', lastname: 'Mustermann'}, {firstname: 'John', lastname: 'Doe'}];
+const users: Array<IUser> = [
+  { firstname: 'Max', lastname: 'Mustermann' },
+  { firstname: 'John', lastname: 'Doe' }
+];
 
 @Component({
   selector: 'demo-app',
@@ -27,7 +30,7 @@ const users:Array<IUser> = [{firstname: 'Max', lastname: 'Mustermann'}, {firstna
   `
 })
 export class DemoAppComponent {
-  users:Array<IUser>;
+  users: Array<IUser>;
 
   constructor() {
     this.users = users;

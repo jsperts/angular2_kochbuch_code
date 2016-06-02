@@ -24,7 +24,7 @@ import { Component } from '@angular/core';
   `
 })
 export class DemoAppComponent {
-  color:string;
+  color: string;
 
   constructor() {
     this.color = 'blue';
