@@ -4,6 +4,16 @@
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Depracated
+
+## [v0.2.0] - 2016-06-03
+
+### Added
+
 * Zweite Lösung in 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Template
 * Zweite Lösung in 07-Component\_Recipes/03-Separation\_of\_Component\_and\_Styles
 * Rezept 08-List\_Recipes/04-Improve\_Performance\_with\_trackBy
