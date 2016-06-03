@@ -1,5 +1,2 @@
 /.idea
-*.js
-*.js.map
-node_modules
 !server.js

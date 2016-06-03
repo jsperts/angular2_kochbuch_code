@@ -8,6 +8,33 @@
 
 ### Removed
 
+### Depracated
+
+## [v0.2.0] - 2016-06-03
+
+### Added
+
+* Zweite Lösung in 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Template
+* Zweite Lösung in 07-Component\_Recipes/03-Separation\_of\_Component\_and\_Styles
+* Rezept 08-List\_Recipes/04-Improve\_Performance\_with\_trackBy
+
+### Changed
+
+* Rezepte benutzen jetzt angular-cli
+* Angular Version aktualisiert (rc.1)
+* Fix .gitignore Dateien für angular-cli
+* Neue Syntax für ngFor in 03-Recipes\_to\_Manipulate\_the\_View/02-List\_of\_Data
+* Neue Syntax für ngFor in 08-List\_Recipes/\*
+* Neues ngFor-Konstrukt für das erste Element in 08-List\_Recipes/03-First\_Last\_ngFor\_Element
+* 03-Recipes\_to\_Manipulate\_the\_View/04-Dynamic\_Classes nutzt jetzt die styles-Eigenschaft statt style Tags im Template
+* 08-List\_Recipes/02-Odd\_Even\_ngFor\_Elements/ nutzt jetzt die styles-Eigenschaft statt style Tags im Template
+* 08-List\_Recipes/03-First\_Last\_ngFor\_Element nutzt jetzt die styles-Eigenschaft statt style Tags im Template
+
+### Removed
+
+* 02-Basic\_Recipes/03-Precompile\_Angular\_App
+* 07-Component\_Recipes/01-Component\_without\_View
+
 ### Deprecated
 
 ## [v0.1.0] - 2016-04-07
