@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
 
-interface IUser {
+interface User {
   firstname: string;
   lastname: string;
   id: number;
 }
 
-const users: Array<IUser> = [
+const users: Array<User> = [
   {firstname: 'Max', lastname: 'Mustermann', id: 0},
   {firstname: 'John', lastname: 'Doe', id: 1}
 ];
-const users2: Array<IUser> = [
+const users2: Array<User> = [
   {firstname: 'Max', lastname: 'Mustermann', id: 0},
   {firstname: 'John', lastname: 'Notdoe', id: 2}
 ];
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   template: `
     <button (click)="setNewList()">New List</button>
     <div>Variante 1 mit * ohne trackBy</div>
@@ -55,8 +55,8 @@ const users2: Array<IUser> = [
     </ul>
   `
 })
-export class DemoAppComponent {
-  users: Array<IUser>;
+export class AppComponent {
+  users: Array<User>;
 
   constructor() {
     this.users = users;
