@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 
-interface IUser {
+interface User {
   firstname: string;
   lastname: string;
 }
 
-const users: Array<IUser> = [
+const users: Array<User> = [
   {firstname: 'Max', lastname: 'Mustermann'},
   {firstname: 'John', lastname: 'Doe'}
 ];
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   styles: [
       '.first { background-color: red; }',
       '.last { background-color: green; }'
@@ -41,8 +41,8 @@ const users: Array<IUser> = [
     </ul>
   `
 })
-export class DemoAppComponent {
-  users: Array<IUser>;
+export class AppComponent {
+  users: Array<User>;
 
   constructor() {
     this.users = users;
