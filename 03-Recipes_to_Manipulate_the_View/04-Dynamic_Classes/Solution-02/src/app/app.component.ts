@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   styles: [
     `.box {
         width: 100px;
@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
   ],
   template: '<div [ngClass]="classes" (click)="toggleRed()"></div>'
 })
-export class DemoAppComponent {
+export class AppComponent {
   classes = {
     red: true,
     box: true
