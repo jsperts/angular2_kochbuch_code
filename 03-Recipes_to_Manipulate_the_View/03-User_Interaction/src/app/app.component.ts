@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   template: `
     <div>Variante 1 mit (EventName)</div>
     <div (click)="clicked()">Click me</div>
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     <div on-click="clicked()">Click me</div>
   `
 })
-export class DemoAppComponent {
+export class AppComponent {
   clicked() {
     console.log('Clicked');
   }
