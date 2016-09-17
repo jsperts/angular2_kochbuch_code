@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   styles: [
     `.box {
         width: 100px;
@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
     <div class="box green" [ngClass]="{green: box.isGreen}" (click)="toggleGreen()"></div>
   `
 })
-export class DemoAppComponent {
+export class AppComponent {
   box = {
     isRed: true,
     isGreen: false
