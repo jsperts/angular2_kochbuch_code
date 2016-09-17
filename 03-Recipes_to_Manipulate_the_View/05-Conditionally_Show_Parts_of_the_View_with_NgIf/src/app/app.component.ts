@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   template: `
     <div>Hello World!</div>
     <button (click)="toggleShowName()">Toggle show name</button>
@@ -21,7 +21,7 @@ import { Component } from '@angular/core';
     </template>
   `
 })
-export class DemoAppComponent {
+export class AppComponent {
   showName: boolean;
 
   constructor() {
