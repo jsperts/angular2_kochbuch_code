@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
-import { HTTP_PROVIDERS } from '@angular/http';
 import { DataService } from './data.service';
 import { Subscription } from 'rxjs/Subscription';
 
-interface IData {
+interface Data {
   id: number;
   name: string;
 }
 
 @Component({
-  selector: 'demo-app',
-  providers: [DataService, HTTP_PROVIDERS],
+  selector: 'app-root',
+  providers: [DataService],
   template: `
     <button (click)="getData()">Get Data</button>
     <button (click)="cancelRequest()">Cancel</button>
@@ -19,9 +18,9 @@ interface IData {
     </ul>
   `
 })
-export class DemoAppComponent {
+export class AppComponent {
   dataService: DataService;
-  data: Array<IData>;
+  data: Array<Data>;
   subscription: Subscription;
 
   constructor(dataService: DataService) {
