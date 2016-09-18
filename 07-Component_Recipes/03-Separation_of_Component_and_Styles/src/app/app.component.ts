@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
-  selector: 'demo-app',
-  styleUrls: ['demo.component.css'],
+  selector: 'app-root',
+  styleUrls: ['./app.component.css'],
   template: `
     <div class="box"></div>
     <div class="box"></div>
@@ -11,4 +10,4 @@ import { Component } from '@angular/core';
     <div class="box"></div>
   `
 })
-export class DemoAppComponent {}
+export class AppComponent {}
