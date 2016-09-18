@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   template: `
     <form (ngSubmit)="onSubmit()" #form="ngForm" novalidate>
       <label>Username</label>
       <input type="text" [(ngModel)]="user.username"
-          required ngControl="username" #username="ngForm"/>
+          required name="username" #username="ngModel"/>
       <div *ngIf="!username.valid">
         This field is required!
       </div>
       <label>Password</label>
       <input type="password" [(ngModel)]="user.password"
-          required minlength="10" ngControl="password" #password="ngForm"/>
+          required minlength="10" name="password" #password="ngModel"/>
       <div *ngIf="password?.errors?.required">
         This field is required!
       </div>
@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
     </form>
   `
 })
-export class DemoAppComponent {
+export class AppComponent {
   user = {
     username: '',
     password: ''
