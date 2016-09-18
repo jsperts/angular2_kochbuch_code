@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { HTTP_PROVIDERS } from '@angular/http';
 import { DataService } from './data.service';
 
-interface IData {
+interface Data {
   id: number;
   name: string;
 }
 
 @Component({
-  selector: 'demo-app',
-  providers: [DataService, HTTP_PROVIDERS],
+  selector: 'app-root',
+  providers: [DataService],
   template: `
     <button (click)="getData()">Get Data</button>
     <ul>
@@ -17,9 +16,9 @@ interface IData {
     </ul>
   `
 })
-export class DemoAppComponent {
+export class AppComponent {
   dataService: DataService;
-  data: Array<IData>;
+  data: Array<Data>;
 
   constructor(dataService: DataService) {
     this.dataService = dataService;
