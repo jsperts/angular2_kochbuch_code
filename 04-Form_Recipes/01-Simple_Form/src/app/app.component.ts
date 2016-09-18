@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   template: `
     <form (ngSubmit)="onSubmit()">
       <label>Username</label>
-      <input type="text" [(ngModel)]="user.username">
+      <input name="username" type="text" [(ngModel)]="user.username">
       <label>Password</label>
-      <input type="password" [(ngModel)]="user.password">
+      <input name="password" type="password" [(ngModel)]="user.password">
       <button type="submit">Submit</button>
     </form>
   `
 })
-export class DemoAppComponent {
+export class AppComponent {
   user = {
     username: '',
     password: ''
