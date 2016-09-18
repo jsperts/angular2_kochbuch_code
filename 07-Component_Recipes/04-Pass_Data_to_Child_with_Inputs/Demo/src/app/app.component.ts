@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { SecondComponent } from './second.component';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   template: `
     <h1>Parent</h1>
     <p>Parent Primitive Data: {{parentPrimitive}}</p>
@@ -11,10 +10,9 @@ import { SecondComponent } from './second.component';
     <button (click)="changeObjectRef()">Change Object Reference</button>
     <button (click)="changeObjectProp()">Change Object name Property</button>
     <app-second [childPrimitive]="parentPrimitive" [childObject]="parentObject"></app-second>
-  `,
-  directives: [SecondComponent]
+  `
 })
-export class DemoAppComponent {
+export class AppComponent {
   parentPrimitive: string = 'Hello World!';
   parentObject = { name: 'Max' };
 
