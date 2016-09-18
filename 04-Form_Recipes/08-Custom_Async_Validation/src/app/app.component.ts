@@ -1,30 +1,30 @@
 import { Component } from '@angular/core';
 import {
     FormBuilder,
-    ControlGroup,
+    FormGroup,
     Validators,
-    Control
-} from '@angular/common';
+    FormControl
+} from '@angular/forms';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   template: `
-    <form (ngSubmit)="onSubmit()" [ngFormModel]="form" novalidate>
+    <form (ngSubmit)="onSubmit()" [formGroup]="form" novalidate>
       <label>Username</label>
-      <input type="text" ngControl="username"/>
+      <input type="text" formControlName="username"/>
       <label>Password</label>
-      <input type="password" ngControl="password"/>
+      <input type="password" formControlName="password"/>
       <button type="submit">Submit</button>
     </form>
   `
 })
-export class DemoAppComponent {
-  form: ControlGroup;
+export class AppComponent {
+  form: FormGroup;
 
   constructor(builder: FormBuilder) {
     this.form = builder.group({
       username: builder.control('', Validators.required,
-          function usernameExists(control: Control) {
+          function usernameExists(control: FormControl) {
             return new Promise((resolve) => {
               setTimeout(() => {
                 if (control.value === 'Max') {
