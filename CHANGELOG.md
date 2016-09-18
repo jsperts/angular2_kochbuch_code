@@ -6,7 +6,14 @@
 
 ### Changed
 
+* Angular und angular-cli Version aktualisiert (2.0.0 und 1.0.0-beta.14)
+* 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Templates/Solution-02 wurde umbenannt und ist jetzt in 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Templates
+* 07-Component\_Recipes/01-Separation\_of\_Component\_and\_TStyles/Solution-02 wurde umbenannt und ist jetzt in 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Styles
+
 ### Removed
+
+* 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Templates/Solution-01, funktioniert nicht mehr mit angular-cli 1.0.0-beta.14
+* 07-Component\_Recipes/03-Separation\_of\_Component\_and\_Styles/Solution-01, funktioniert nicht mehr mit angular-cli 1.0.0-beta.14
 
 ### Depracated
 
