@@ -3,7 +3,6 @@ import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
-  providers: [ DataService ],
   template: '<div>Hello World!</div>'
 })
 export class AppComponent {
