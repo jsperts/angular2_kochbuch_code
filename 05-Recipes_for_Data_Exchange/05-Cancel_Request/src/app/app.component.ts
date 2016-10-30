@@ -9,7 +9,6 @@ interface Data {
 
 @Component({
   selector: 'app-root',
-  providers: [DataService],
   template: `
     <button (click)="getData()">Get Data</button>
     <button (click)="cancelRequest()">Cancel</button>

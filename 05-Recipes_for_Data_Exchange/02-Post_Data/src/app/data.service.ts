@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
-import {
-    Http,
-    Headers,
-    RequestOptions
-} from '@angular/http';
+import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
@@ -22,12 +18,9 @@ export class DataService {
   }
 
   sendData(name) {
-    const headers = new Headers({'Content-Type': 'application/json'});
-    const options = new RequestOptions({headers});
+    const data = { name: name };
 
-    const data = JSON.stringify({name});
-
-    const observable = this.http.post(this.url, data, options);
+    const observable = this.http.post(this.url, data);
     const anotherObservable = observable.map((response) => response.json().data);
     return anotherObservable;
   }
