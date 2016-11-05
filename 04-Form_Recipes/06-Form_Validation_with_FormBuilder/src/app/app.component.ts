@@ -9,10 +9,12 @@ import {
   selector: 'app-root',
   template: `
     <form (ngSubmit)="onSubmit()" [formGroup]="form" novalidate>
-      <label>Username</label>
-      <input type="text" formControlName="username"/>
-      <label>Password</label>
-      <input type="password" formControlName="password"/>
+      <label>Username
+        <input type="text" formControlName="username"/>
+      </label>
+      <label>Password
+        <input type="password" formControlName="password"/>
+      </label>
       <button type="submit">Submit</button>
     </form>
   `

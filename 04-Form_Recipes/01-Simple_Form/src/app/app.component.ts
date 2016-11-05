@@ -4,10 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <form (ngSubmit)="onSubmit()">
-      <label>Username</label>
-      <input name="username" type="text" [(ngModel)]="user.username">
-      <label>Password</label>
-      <input name="password" type="password" [(ngModel)]="user.password">
+      <label>Username
+        <input name="username" type="text" [(ngModel)]="user.username">
+      </label>
+      <label>Password
+        <input name="password" type="password" [(ngModel)]="user.password">
+      </label>
       <button type="submit">Submit</button>
     </form>
   `
@@ -18,7 +20,6 @@ export class AppComponent {
     password: ''
   };
 
-  constructor() {}
   onSubmit() {
     console.log(this.user);
   }
