@@ -4,6 +4,11 @@
 
 ### Added
 
+* Routing Rezepte
+  * 01-Routing\_Basics
+  * 02-Hash\_Based\_URLs
+  * 03-Highlight\_Active\_Route
+
 ### Changed
 
 * Angular und angular-cli Version aktualisiert (2.0.0 und 1.0.0-beta.14)
