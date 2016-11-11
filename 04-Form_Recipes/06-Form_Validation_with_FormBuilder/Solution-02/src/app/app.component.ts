@@ -8,7 +8,7 @@ import {
 @Component({
   selector: 'app-root',
   template: `
-    <form (ngSubmit)="onSubmit()" [formGroup]="form" novalidate>
+    <form (ngSubmit)="onSubmit()" [formGroup]="myForm" novalidate>
       <label>Username
         <input type="text" formControlName="username"/>
       </label>
@@ -20,10 +20,10 @@ import {
   `
 })
 export class AppComponent {
-  form: FormGroup;
+  myForm: FormGroup;
 
   constructor(builder: FormBuilder) {
-    this.form = builder.group({
+    this.myForm = builder.group({
       username: builder.control('', Validators.required),
       password: builder.control('', Validators.compose([
         Validators.required,
@@ -33,8 +33,8 @@ export class AppComponent {
   }
 
   onSubmit() {
-    if (this.form.valid) {
-      console.log(this.form.value);
+    if (this.myForm.valid) {
+      console.log(this.myForm.value);
     }
   }
 }
