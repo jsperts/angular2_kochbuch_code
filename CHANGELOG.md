@@ -4,10 +4,18 @@
 
 ### Added
 
+* 05-Production\_Build
 * Routing Rezepte
   * 01-Routing\_Basics
   * 02-Hash\_Based\_URLs
   * 03-Highlight\_Active\_Route
+  * 04-Redirect\_Unknown\_Path
+  * 05-Navigation\_in\_Class
+  * 06-Routing\_Parameters
+* Formularrezepte
+  * Zweite Lösung für 06-Form\_Validation\_with\_FormBuilder
+  * 07-Form\_Show\_Error\_for\_Field\_with\_FormBuilder
+  * 10-Validate\_Multiple\_Fields
 
 ### Changed
 
