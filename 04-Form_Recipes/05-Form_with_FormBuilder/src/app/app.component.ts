@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-root',
   template: `
-    <form (ngSubmit)="onSubmit()" [formGroup]="form" novalidate>
+    <form (ngSubmit)="onSubmit()" [formGroup]="myForm" novalidate>
       <label>Username
         <input type="text" formControlName="username"/>
       </label>
@@ -16,15 +16,15 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   `
 })
 export class AppComponent {
-  form: FormGroup;
+  myForm: FormGroup;
   constructor(builder: FormBuilder) {
-    this.form = builder.group({
+    this.myForm = builder.group({
       username: builder.control(''),
       password: builder.control('')
     });
   }
 
   onSubmit() {
-    console.log(this.form.value);
+    console.log(this.myForm.value);
   }
 }
