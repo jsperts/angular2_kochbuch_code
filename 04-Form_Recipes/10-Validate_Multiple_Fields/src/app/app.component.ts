@@ -39,7 +39,6 @@ export class AppComponent {
         passwordRepeat: builder.control('')
       }, {
         validator(group: FormGroup) {
-          console.log(group);
           if (group.value.password !== group.value.passwordRepeat) {
             return {
               passwordsNotEqual: true
