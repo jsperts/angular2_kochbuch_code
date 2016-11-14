@@ -12,7 +12,7 @@ import {
       <label>Username
         <input type="text" formControlName="username"/>
       </label>
-      <div *ngIf="!myForm.controls.username.valid">
+      <div *ngIf="myForm.controls.username.invalid">
         This field is required!
       </div>
       <label>Password
@@ -24,7 +24,7 @@ import {
       <div *ngIf="myForm.controls.password.errors?.minlength">
         This field must have at least 10 characters
       </div>      
-      <button type="submit" [disabled]="!myForm.valid">Submit</button>
+      <button type="submit" [disabled]="myForm.invalid">Submit</button>
     </form>
   `
 })

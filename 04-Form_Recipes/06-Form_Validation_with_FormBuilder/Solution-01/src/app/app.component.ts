@@ -15,7 +15,7 @@ import {
       <label>Password
         <input type="password" formControlName="password"/>
       </label>
-      <button type="submit" [disabled]="!myForm.valid">Submit</button>
+      <button type="submit" [disabled]="myForm.invalid">Submit</button>
     </form>
   `
 })

@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
         <input type="password" [(ngModel)]="user.password"
           required minlength="10" name="password" />
       </label>
-      <button type="submit" [disabled]="!form.valid">Submit</button>
+      <button type="submit" [disabled]="form.invalid">Submit</button>
     </form>`
 })
 export class AppComponent {

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
       <label>Username
         <input type="text" [(ngModel)]="user.username" required name="username"/>
       </label>
-      <div *ngIf="!form.controls.username?.valid">
+      <div *ngIf="form.controls.username?.invalid">
         This field is required!
       </div>
       <label>Password
@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
       <div *ngIf="form.controls.password?.errors?.minlength">
         This field must have at least 10 characters
       </div>
-      <button type="submit" [disabled]="!form.valid">Submit</button>
+      <button type="submit" [disabled]="form.invalid">Submit</button>
     </form>
   `
 })
