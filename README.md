@@ -4,8 +4,7 @@ Hier befindet sich Beispiel-Code für das [Angular 2 Kochbuch](https://leanpub.c
 
 ## Angular Version
 
-Am 14.09.2016 wurde die 2.0.0 Version von Angular veröffentlicht und hat mitsich einige Änderungen gebracht. Diese Änderungen erfordern eine Überarbeitung von allen Rezepten, die sich in diesem Buch befinden. Da ich momentan wenig Zeit habe, wird es eine Weile dauern bis ich alle Rezepte auf den neusten stand gebracht hab. Dafür bitte ich um Entschuldigung.
-I master-Branch wird die Version 2.0.0-rc.1 von Angular und 1.0.0-beta.5 von angular-cli benutzt. Im [next-Branch](https://github.com/jsperts/angular2_kochbuch_code/tree/next) gibt es aktuelle Code-Beispiele für Angular 2.0.0 und angular-cli 1.0.0-beta.14.
+Aktuell wird die Version 2.1.2 von Angular und 1.0.0-beta.19-3 von angular-cli benutzt.
 
 ## Lizenz
 
