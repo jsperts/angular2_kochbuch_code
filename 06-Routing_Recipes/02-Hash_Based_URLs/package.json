@@ -1,0 +1,31 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "start": "ng server",
+    "lint": "tslint \"src/**/*.ts\""
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "2.1.2",
+    "@angular/compiler": "2.1.2",
+    "@angular/core": "2.1.2",
+    "@angular/platform-browser": "2.1.2",
+    "@angular/platform-browser-dynamic": "2.1.2",
+    "@angular/router": "3.1.2",
+    "core-js": "2.4.1",
+    "rxjs": "5.0.0-beta.12",
+    "ts-helpers": "1.1.2",
+    "zone.js": "0.6.26"
+  },
+  "devDependencies": {
+    "@types/node": "6.0.46",
+    "angular-cli": "1.0.0-beta.19-3",
+    "codelyzer": "1.0.0-beta.3",
+    "ts-node": "1.7.0",
+    "tslint": "3.15.1",
+    "typescript": "2.0.9"
+  }
+}

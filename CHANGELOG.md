@@ -1,12 +1,34 @@
 # Change Log
 
-## [Unreleased]
+## [v1.0.0] - 2016-11-15
 
 ### Added
 
+* 02-Basic\_Recipes/05-Production\_Build
+* 07-Component\_Recipes/06-Execute\_Code\_on\_Component\_Init
+* 07-Component\_Recipes/07-Execute\_Code\_on\_Component\_Destroy
+* Routing Rezepte
+  * 01-Routing\_Basics
+  * 02-Hash\_Based\_URLs
+  * 03-Highlight\_Active\_Route
+  * 04-Redirect\_Unknown\_Path
+  * 05-Navigation\_in\_Class
+  * 06-Routing\_Parameters
+* Formularrezepte
+  * Zweite Lösung für 06-Form\_Validation\_with\_FormBuilder
+  * 07-Form\_Show\_Error\_for\_Field\_with\_FormBuilder
+  * 10-Validate\_Multiple\_Fields
+
 ### Changed
 
+* Angular und angular-cli Version aktualisiert (2.1.2 und 1.0.0-beta.19-3)
+* 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Templates/Solution-02 wurde umbenannt und ist jetzt in 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Templates
+* 07-Component\_Recipes/01-Separation\_of\_Component\_and\_TStyles/Solution-02 wurde umbenannt und ist jetzt in 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Styles
+
 ### Removed
+
+* 07-Component\_Recipes/01-Separation\_of\_Component\_and\_Templates/Solution-01, funktioniert nicht mehr mit angular-cli 1.0.0-beta.14
+* 07-Component\_Recipes/03-Separation\_of\_Component\_and\_Styles/Solution-01, funktioniert nicht mehr mit angular-cli 1.0.0-beta.14
 
 ### Depracated
 

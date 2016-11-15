@@ -1,4 +1,7 @@
-import { bootstrap } from '@angular/platform-browser-dynamic';
-import { DemoAppComponent } from './app/index';
+import './polyfills.ts';
 
-bootstrap(DemoAppComponent);
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app';
+
+platformBrowserDynamic().bootstrapModule(AppModule);
